@@ -12,6 +12,9 @@ if type brew &>/dev/null; then
   compinit
 fi
 
+alias b="bundle"
+alias by="bundle && yarn"
 alias dfman="$(which git) --git-dir=$HOME/projects/dotfiles --work-tree=$HOME"
+alias y="yarn"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
