@@ -1,0 +1,41 @@
+[init]
+	defaultBranch = main
+[user]
+	name = Todd Siegel
+	email = todd@solerasoftware.com\n
+[color]
+	ui = auto
+[color "diff"]
+        old = red dim
+        new = brightgreen bold
+[commit]
+        template = ~/.gitmessage
+[core]
+	excludesfile = ~/.gitignore_global
+[fetch]
+        prune = true
+[alias]
+	alias = config --get-regexp ^alias\\.
+	amend = commit --amend
+	ap = add --patch
+	br = branch
+	ci = commit -v
+	co = checkout
+        fixup = commit --fixup
+        nomend = commit --amend --no-edit
+        rbi = rebase -i
+        rbim = rebase -i main
+	remain = !git fetch origin && git rebase origin/main
+        review = show main.. --reverse
+	slog = log --pretty=oneline --abbrev-commit
+        squash = commit --squash
+	st = status --short --branch
+        staged = diff --cached
+        stf = !git status -s | cut -c4- | xargs
+        sum = log --pretty=oneline --abbrev-commit --name-status --reverse
+        summ = log --pretty=oneline --abbrev-commit --name-status --reverse main..
+        todo = !git diff main.. | grep "^+.*TODO"
+[push]
+	default = current
+[rebase]
+	autosquash = true
