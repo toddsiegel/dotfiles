@@ -10,6 +10,7 @@
         new = brightgreen bold
 [commit]
         template = ~/.gitmessage
+        verbose = true
 [core]
 	excludesfile = ~/.gitignore_global
 [fetch]
