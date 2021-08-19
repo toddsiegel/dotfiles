@@ -12,6 +12,9 @@ if type brew &>/dev/null; then
   compinit
 fi
 
+# aliases
+[[ -f ~/.config.local/aliases ]] && source ~/.config.local/aliases
+
 alias b="bundle"
 alias by="bundle && yarn"
 alias dfman="$(which git) --git-dir=$HOME/projects/dotfiles --work-tree=$HOME"
