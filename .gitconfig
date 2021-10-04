@@ -19,6 +19,7 @@
 [alias]
 	alias = config --get-regexp ^alias\\.
 	amend = commit --amend
+	autosquash = rebase -i --autosquash
 	ap = add --patch
 	br = branch
 	ci = commit -v
