@@ -38,6 +38,31 @@
         sum = log --pretty=oneline --abbrev-commit --name-status --reverse
         summ = log --pretty=oneline --abbrev-commit --name-status --reverse main..
         todo = !git diff main.. | grep "^+.*TODO"
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+
+[delta]
+    features = side-by-side line-numbers decorations
+    syntax-theme = Dracula
+    plus-style = syntax "#003800"
+    minus-style = syntax "#3f0001"
+
+[delta "decorations"]
+    commit-decoration-style = bold yellow box ul
+    file-style = bold yellow ul
+    file-decoration-style = none
+    hunk-header-decoration-style = cyan box ul
+    hunk-header-line-number-style = "#067a00"
+
+[delta "line-numbers"]
+    line-numbers-left-style = cyan
+    line-numbers-right-style = cyan
+    line-numbers-minus-style = 124
+    line-numbers-plus-style = 28
+
 [push]
 	default = current
 [rebase]
