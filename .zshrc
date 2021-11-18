@@ -17,7 +17,16 @@ fi
 
 alias b="bundle"
 alias by="bundle && yarn"
+alias byo="bundle outdated; yarn outdated"
 alias dfman="$(which git) --git-dir=$HOME/projects/dotfiles --work-tree=$HOME"
+alias gollum="docker run --rm --name gollum -d -v $(pwd):/wiki -p 4567:4567 gollum"
 alias y="yarn"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export EDITOR=vim
+
+# For Pure prompt: https://github.com/sindresorhus/pure
+autoload -U promptinit; promptinit
+zstyle ':prompt:pure:path' color 033
+prompt pure
