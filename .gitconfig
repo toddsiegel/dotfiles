@@ -2,7 +2,7 @@
 	defaultBranch = main
 [user]
 	name = Todd Siegel
-	email = todd@solerasoftware.com\n
+	email = todd@solerasoftware.com
 [color]
 	ui = auto
 [color "diff"]
