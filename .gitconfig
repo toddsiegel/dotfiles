@@ -22,7 +22,7 @@
 	amend = commit --amend
 	autosquash = rebase -i --autosquash
 	ap = add --patch
-	br = branch
+	br = branch -vv
 	ci = commit -v
 	co = checkout
         fixup = commit --fixup
