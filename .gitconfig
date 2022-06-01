@@ -17,6 +17,7 @@
 [fetch]
         prune = true
 [alias]
+	adp = add -p
 	alias = config --get-regexp ^alias\\.
 	amend = commit --amend
 	autosquash = rebase -i --autosquash
