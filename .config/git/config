@@ -9,7 +9,6 @@
         old = red dim
         new = brightgreen bold
 [commit]
-        template = ~/.gitmessage
         verbose = true
 [core]
         editor = vim
