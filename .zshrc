@@ -50,7 +50,7 @@ alias rt="bin/rails test"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-export EDITOR=vim
+export EDITOR=nvim
 
 # For Pure prompt: https://github.com/sindresorhus/pure
 autoload -U promptinit; promptinit
