@@ -13,7 +13,6 @@
         verbose = true
 [core]
         editor = vim
-	excludesfile = ~/.gitignore_global
 [fetch]
         prune = true
 [alias]
@@ -22,21 +21,28 @@
 	amend = commit --amend
 	autosquash = rebase -i --autosquash
 	ap = add --patch
+	behind = "!f() { git branch | sed \"s/\\\\*//\" | while read branch; do count=$(git rev-list --count $branch..main); printf \"%-4s commits behind main %s\\n\" \"$count\" \"$branch\"; done | sort -nr; }; f"
 	br = branch -vv
+        brr = branch -vv --sort=-committerdate
 	ci = commit -v
 	co = checkout
 	fixup = commit --fixup
+	fpush = push --force-with-lease
 	nomend = commit --amend --no-edit
+        pick = cherry-pick
         rbi = rebase -i
         rbim = rebase -i main
 	remain = !git fetch origin && git rebase origin/main
 	review = show main.. --reverse
 	slog = log --pretty=oneline --abbrev-commit
         squash = commit --squash
-	st = status --short --branch
+        st = status --short --branch
 	staged = diff --cached
 	stf = !git status -s | cut -c4- | xargs
 	sum = log --pretty=oneline --abbrev-commit --name-status --reverse
+        sw = switch
+        sw- = switch -
+        swc = switch --create
 	summ = log --pretty=oneline --abbrev-commit --name-status --reverse main..
 	todo = !git diff main.. | grep "^+.*TODO"
 	undo = reset HEAD~
@@ -45,8 +51,13 @@
 	default = current
 [rebase]
 	autosquash = true
+        updateRefs = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[credential "https://git.heroku.com"]
+	provider = generic
+[advice]
+	skippedCherryPicks = false
