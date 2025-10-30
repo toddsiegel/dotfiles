@@ -18,10 +18,35 @@ fi
 
 alias b="bundle"
 alias by="bundle && yarn"
+alias bo="bundle outdated"
+alias boe="bundle outdated --only-explicit"
+alias bup="bundle update"
 alias byo="bundle outdated; yarn outdated"
+alias yo="yarn outdated"
+alias yup="yarn upgrade"
+
+# Docker aliases
+alias dis="docker images"
+alias dps="docker ps"
+
 alias dfman="$(which git) --git-dir=$HOME/projects/dotfiles --work-tree=$HOME"
 alias gollum="docker run --rm --name gollum -d -v $(pwd):/wiki -p 4567:4567 gollum"
 alias y="yarn"
+
+# git aliases
+alias gcam="git commit -am"
+alias gcm="git commit -m"
+alias lzg="lazygit"
+
+# gh aliases
+alias gha="gh run list -u toddsiegel"
+alias ghw="gh run watch"
+
+# rails aliases
+alias dbst="rails db:migrate:status"
+alias dbmi="rails db:migrate"
+alias dbro="rails db:rollback"
+alias rt="bin/rails test"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
