@@ -52,7 +52,3 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 export EDITOR=nvim
 
-# For Pure prompt: https://github.com/sindresorhus/pure
-autoload -U promptinit; promptinit
-zstyle ':prompt:pure:path' color 033
-prompt pure
