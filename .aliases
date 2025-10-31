@@ -1,0 +1,36 @@
+alias dfman="$(which git) --git-dir=$HOME/projects/dotfiles --work-tree=$HOME"
+
+# Ruby
+alias b="bundle"
+alias by="bundle && yarn"
+alias bo="bundle outdated"
+alias boe="bundle outdated --only-explicit"
+alias bup="bundle update"
+alias byo="bundle outdated; yarn outdated"
+
+# Rails
+alias dbst="rails db:migrate:status"
+alias dbmi="rails db:migrate"
+alias dbro="rails db:rollback"
+alias rt="bin/rails test"
+
+# JavaScript
+alias y="yarn"
+alias yo="yarn outdated"
+alias yup="yarn upgrade"
+
+# Docker
+alias dis="docker images"
+alias dps="docker ps"
+
+# git
+alias gcam="git commit -am"
+alias gcm="git commit -m"
+alias lzg="lazygit"
+
+# gh aliases
+alias gha="gh run list -u toddsiegel"
+alias ghw="gh run watch"
+
+# aliases
+[[ -f ~/.config.local/aliases ]] && source ~/.config.local/aliases
