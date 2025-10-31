@@ -1,5 +1,0 @@
-alias b="bundle"
-alias by="bundle && yarn"
-alias devserver="foreman start -f Procfile.dev"
-alias dfman="$(which git) --git-dir=$HOME/projects/dotfiles --work-tree=$HOME"
-alias y="yarn"
