@@ -52,3 +52,4 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 export EDITOR=nvim
 
+eval "$(mise activate zsh)"
