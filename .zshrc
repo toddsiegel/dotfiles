@@ -1,4 +1,5 @@
 export EDITOR=nvim
+export VISUAL=nvim
 
 eval "$(mise activate zsh)"
 

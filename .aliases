@@ -33,4 +33,4 @@ alias gha="gh run list -u toddsiegel"
 alias ghw="gh run watch"
 
 # aliases
-[[ -f ~/.config.local/aliases ]] && source ~/.config.local/aliases
+[[ -f ~/.aliases.local ]] && source ~/.aliases.local
