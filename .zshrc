@@ -52,6 +52,9 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 export EDITOR=nvim
 
+# I set this a long, long time ago. Maybe it's safe to disable it. Let's see.
+# export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
 # ngok completions
 if command -v ngrok &>/dev/null; then
   eval "$(ngrok completion)"
