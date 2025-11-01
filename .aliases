@@ -1,4 +1,4 @@
-alias dfman="$(which git) --git-dir=$HOME/projects/dotfiles --work-tree=$HOME"
+alias dfman="$(which git) --git-dir=$HOME/projects/dotfiles.git --work-tree=$HOME"
 
 # Ruby
 alias b="bundle"
