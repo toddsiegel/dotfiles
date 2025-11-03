@@ -3,6 +3,8 @@ export VISUAL=nvim
 
 eval "$(mise activate zsh)"
 
+export PATH="${HOME}/.local/bin:$PATH"
+
 # Machine-specific config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
