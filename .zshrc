@@ -27,3 +27,8 @@ compinit
 # End of lines added by compinstall
 
 PS1="%~ $ "
+
+# Start SSH Agent
+if [ -z "$SSH_AGENT_SOCK" ]; then
+    eval "$(ssh-agent -s)"
+fi
