@@ -10,6 +10,7 @@ export PATH="${HOME}/.local/bin:$PATH"
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -24,3 +25,5 @@ zstyle :compinstall filename '/home/todd/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+PS1="%~ $ "
