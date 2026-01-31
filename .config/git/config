@@ -11,7 +11,7 @@
 [commit]
         verbose = true
 [core]
-        editor = vim
+        editor = nvim
 [fetch]
         prune = true
 [alias]
