@@ -32,3 +32,6 @@ PS1="%~ $ "
 if [ -z "$SSH_AGENT_SOCK" ]; then
     eval "$(ssh-agent -s)"
 fi
+
+# opencode
+export PATH=/home/todd/.opencode/bin:$PATH
