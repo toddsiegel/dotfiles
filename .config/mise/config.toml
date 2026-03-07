@@ -1,5 +1,8 @@
 [tools]
 claude = "latest"
+gh = "latest"
+git-lfs = "latest"
+gum = "latest"
 lazydocker = "latest"
 lazygit = "latest"
 neovim = "latest"
