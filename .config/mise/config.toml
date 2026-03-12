@@ -1,4 +1,5 @@
 [tools]
+btop = "latest"
 claude = "latest"
 gh = "latest"
 git-lfs = "latest"
@@ -10,3 +11,8 @@ node = 'lts'
 ruby = 'latest'
 tmux = "latest"
 usage = "latest"
+
+[settings]
+
+[settings.ruby]
+compile = true
