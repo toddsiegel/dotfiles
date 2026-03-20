@@ -2,3 +2,5 @@
 .idea/
 mise.local.toml
 kitty.session
+
+**/.claude/settings.local.json

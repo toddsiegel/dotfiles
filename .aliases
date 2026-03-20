@@ -9,6 +9,7 @@ alias bup="bundle update"
 alias byo="bundle outdated; yarn outdated"
 
 # Rails
+alias ci="bin/ci"
 alias dbst="rails db:migrate:status"
 alias dbmi="rails db:migrate"
 alias dbro="rails db:rollback"
