@@ -1,6 +1,5 @@
 [tools]
 btop = "latest"
-claude = "latest"
 gh = "latest"
 git-lfs = "latest"
 gum = "latest"
