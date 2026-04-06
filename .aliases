@@ -1,4 +1,10 @@
+# Dotfile management
 alias dfman="$(which git) --git-dir=$HOME/projects/dotfiles.git --work-tree=$HOME"
+alias dfadd="dfman add"
+alias dfci="dfman commit"
+alias dfcam="dfman commit -am"
+alias dfdiff="dfman diff"
+alias dfst="dfman status"
 
 # Ruby
 alias b="bundle"
