@@ -60,3 +60,5 @@
 	provider = generic
 [advice]
 	skippedCherryPicks = false
+[includeIf "gitdir:~/projects/scipinion"]
+    path = ~/.config/git/scipinion-config
