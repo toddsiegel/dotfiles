@@ -12,7 +12,7 @@ alias by="bundle && yarn"
 alias bo="bundle outdated"
 alias boe="bundle outdated --only-explicit"
 alias bup="bundle update"
-alias byo="bundle outdated; yarn outdated"
+alias outdated="bundle outdated;npm outdated"
 
 # Rails
 alias ci="bin/ci"
@@ -22,13 +22,13 @@ alias dbro="rails db:rollback"
 alias rt="bin/rails test"
 
 # JavaScript
-alias y="yarn"
-alias yo="yarn outdated"
-alias yup="yarn upgrade"
+alias no="yarn outdated"
+alias nup="yarn upgrade"
 
 # Docker
 alias dis="docker images"
 alias dps="docker ps"
+alias dcu="docker compose up"
 alias lzd="lazydocker"
 
 # git
