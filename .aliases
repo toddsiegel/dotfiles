@@ -1,5 +1,9 @@
 # General
-alias rrc="source ~/.bashrc"
+alias rebash="source ~/.bashrc"
+
+# apt
+alias aptout="apt list --upgradeable"
+alias aptup="sudo apt update && sudo apt upgrade"
 
 # Dotfile management
 alias dfman="$(which git) --git-dir=$HOME/projects/dotfiles.git --work-tree=$HOME"
@@ -7,6 +11,9 @@ alias dfadd="dfman add"
 alias dfci="dfman commit"
 alias dfcam="dfman commit -am"
 alias dfdiff="dfman diff"
+alias dflog="dfman log"
+alias dfpull="dfman pull"
+alias dfpush="dfman push"
 alias dfst="dfman status"
 
 # Ruby
