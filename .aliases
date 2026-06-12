@@ -1,3 +1,6 @@
+# General
+alias rrc="source ~/.bashrc"
+
 # Dotfile management
 alias dfman="$(which git) --git-dir=$HOME/projects/dotfiles.git --work-tree=$HOME"
 alias dfadd="dfman add"

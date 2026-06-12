@@ -16,4 +16,4 @@ usage = "latest"
 [settings]
 
 [settings.ruby]
-compile = true
+compile = false

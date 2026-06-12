@@ -46,6 +46,9 @@
 	todo = !git diff main.. | grep "^+.*TODO"
 	undo = reset HEAD~
 	wip = commit --message=WIP
+	w = worktree
+	wadd = worktree add
+	wls = worktree list
 [push]
 	default = current
 [rebase]
