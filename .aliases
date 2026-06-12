@@ -18,7 +18,7 @@ alias dfst="dfman status"
 
 # Ruby
 alias b="bundle"
-alias by="bundle && yarn"
+alias bni="bundle install && npm install"
 alias bo="bundle outdated"
 alias boe="bundle outdated --only-explicit"
 alias bup="bundle update"
@@ -32,8 +32,8 @@ alias dbro="rails db:rollback"
 alias rt="bin/rails test"
 
 # JavaScript
-alias no="yarn outdated"
-alias nup="yarn upgrade"
+alias no="npm outdated"
+alias nup="npm upgrade"
 
 # Docker
 alias dis="docker images"
