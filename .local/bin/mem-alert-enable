@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Enable and start the memory-usage alert timer.
+set -euo pipefail
+systemctl --user enable --now mem-alert.timer
+echo "mem-alert enabled."
+systemctl --user list-timers mem-alert.timer --no-pager

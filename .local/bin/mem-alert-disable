@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Stop and disable the memory-usage alert timer.
+set -euo pipefail
+systemctl --user disable --now mem-alert.timer
+echo "mem-alert disabled."

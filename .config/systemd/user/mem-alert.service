@@ -1,0 +1,6 @@
+[Unit]
+Description=Alert when memory usage is high
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/mem-alert.sh

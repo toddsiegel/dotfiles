@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Reload systemd user units and restart the timer after editing
+# mem-alert.sh, mem-alert.service, or mem-alert.timer.
+set -euo pipefail
+systemctl --user daemon-reload
+systemctl --user restart mem-alert.timer
+echo "mem-alert reloaded."
+systemctl --user list-timers mem-alert.timer --no-pager
