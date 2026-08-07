@@ -5,4 +5,55 @@
 //
 // To see the default key bindings run `zed: open default keymap`
 // from the command palette.
-[{}]
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-o": "file_finder::Toggle",
+    },
+  },
+  {
+    "unbind": {
+      "ctrl-o": "workspace::OpenFiles"
+    }
+  },
+  {
+    "context": "Terminal",
+    "unbind": {
+      "ctrl-o": [
+        "terminal::SendKeystroke",
+        "ctrl-o"
+      ]
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-o": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-p": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "FileFinder || FileFinder > Picker > Editor",
+    "bindings": {
+      "ctrl-o": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "FileFinder || FileFinder > Picker > Editor",
+    "unbind": {
+      "ctrl-p": "file_finder::Toggle"
+    }
+  }
+]

@@ -1,5 +1,6 @@
 .DS_Store
 .idea/
+CLAUDE.local.md
 mise.local.toml
 kitty.session
 

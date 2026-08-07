@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "debugger": {
+    "button": false
+  },
   "format_on_save": "on",
   "edit_predictions": {
     "provider": "zed",
@@ -24,6 +27,7 @@
     "dock": "right",
   },
   "collaboration_panel": {
+    "button": false,
     "dock": "right",
   },
   "agent": {
