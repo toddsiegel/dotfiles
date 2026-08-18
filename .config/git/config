@@ -85,3 +85,5 @@
 
 [includeIf "gitdir:~/projects/scipinion"]
     path = ~/.config/git/scipinion-config
+[rerere]
+	enabled = true

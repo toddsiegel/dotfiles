@@ -1,4 +1,5 @@
 .DS_Store
+_DEVNOTES.md
 .idea/
 CLAUDE.local.md
 mise.local.toml
