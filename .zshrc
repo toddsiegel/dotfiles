@@ -1,8 +1,6 @@
 export EDITOR=nvim
 export VISUAL=nvim
 
-eval "$(mise activate zsh)"
-
 export PATH="${HOME}/.local/bin:$PATH"
 
 # Machine-specific config
@@ -35,3 +33,6 @@ fi
 
 # opencode
 export PATH=/home/todd/.opencode/bin:$PATH
+
+# Keep last: mise must activate after all other PATH modifications
+command -v mise >/dev/null && eval "$(mise activate zsh)"
