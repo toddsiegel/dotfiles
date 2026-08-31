@@ -19,11 +19,6 @@
     },
   },
   {
-    "unbind": {
-      "ctrl-o": "workspace::OpenFiles"
-    }
-  },
-  {
     "context": "Terminal",
     "unbind": {
       "ctrl-o": [
@@ -60,6 +55,75 @@
     "context": "Editor",
     "unbind": {
       "ctrl-,": "editor::GoToPreviousHunk"
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "ctrl-d": [
+        "editor::SelectNext",
+        {
+          "replace_newest": false
+        }
+      ]
+    }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "ctrl-shift-d": "editor::DuplicateSelection"
+    }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "ctrl-alt-shift-down": "editor::DuplicateLineDown"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-d": "editor::DuplicateLineUp"
+    }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "ctrl-alt-shift-up": "editor::DuplicateLineUp"
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "unbind": {
+      "ctrl-r": "outline::Toggle"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-r": "search::ToggleReplace"
+    }
+  },
+  {
+    "context": "Pane",
+    "unbind": {
+      "ctrl-alt-shift-h": "search::ToggleReplace"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-space": "command_palette::Toggle"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-shift-p": "command_palette::Toggle"
+    }
+  },
+  {
+    "bindings": {
+      "alt-o": "file_finder::Toggle"
     }
   }
 ]

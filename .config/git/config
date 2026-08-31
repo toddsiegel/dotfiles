@@ -53,6 +53,7 @@
 
 [credential "https://git.heroku.com"]
     provider = generic
+	helper = !heroku git:credentials
 
 [fetch]
     prune = true
