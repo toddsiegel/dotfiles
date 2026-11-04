@@ -21,40 +21,38 @@
   {
     "context": "Terminal",
     "unbind": {
-      "ctrl-o": [
-        "terminal::SendKeystroke",
-        "ctrl-o"
-      ]
-    }
+      "ctrl-o": ["terminal::SendKeystroke", "ctrl-o"],
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-o": "file_finder::Toggle"
-    }
+      "ctrl-o": "file_finder::Toggle",
+    },
   },
   {
     "context": "Workspace",
     "unbind": {
-      "ctrl-p": "file_finder::Toggle"
-    }
+      "ctrl-p": "file_finder::Toggle",
+    },
   },
   {
     "context": "FileFinder || FileFinder > Picker > Editor",
     "bindings": {
-      "ctrl-o": "file_finder::Toggle"
-    }
+      "ctrl-o": "file_finder::Toggle",
+    },
   },
   {
     "context": "FileFinder || FileFinder > Picker > Editor",
     "unbind": {
-      "ctrl-p": "file_finder::Toggle"
-    }
+      "ctrl-p": "file_finder::Toggle",
+    },
   },
   {
     "context": "Editor",
     "unbind": {
-      "ctrl-,": "editor::GoToPreviousHunk"
+      "ctrl-,": "editor::GoToPreviousHunk",
+    },
   },
   {
     "context": "Editor",
@@ -62,68 +60,119 @@
       "ctrl-d": [
         "editor::SelectNext",
         {
-          "replace_newest": false
-        }
-      ]
-    }
+          "replace_newest": false,
+        },
+      ],
+    },
   },
   {
     "context": "Editor",
     "unbind": {
-      "ctrl-shift-d": "editor::DuplicateSelection"
-    }
+      "ctrl-shift-d": "editor::DuplicateSelection",
+    },
   },
   {
     "context": "Editor",
     "unbind": {
-      "ctrl-alt-shift-down": "editor::DuplicateLineDown"
-    }
+      "ctrl-alt-shift-down": "editor::DuplicateLineDown",
+    },
   },
   {
     "context": "Editor",
     "bindings": {
-      "ctrl-shift-d": "editor::DuplicateLineUp"
-    }
+      "ctrl-shift-d": "editor::DuplicateLineUp",
+    },
   },
   {
     "context": "Editor",
     "unbind": {
-      "ctrl-alt-shift-up": "editor::DuplicateLineUp"
-    }
+      "ctrl-alt-shift-up": "editor::DuplicateLineUp",
+    },
   },
   {
     "context": "Editor && mode == full",
     "unbind": {
-      "ctrl-r": "outline::Toggle"
-    }
+      "ctrl-r": "outline::Toggle",
+    },
   },
   {
     "context": "Pane",
     "bindings": {
-      "ctrl-r": "search::ToggleReplace"
-    }
+      "ctrl-r": "search::ToggleReplace",
+    },
   },
   {
     "context": "Pane",
     "unbind": {
-      "ctrl-alt-shift-h": "search::ToggleReplace"
-    }
+      "ctrl-alt-shift-h": "search::ToggleReplace",
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
-      "alt-space": "command_palette::Toggle"
+      "alt-space": "command_palette::Toggle",
+    },
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-shift-p": "command_palette::Toggle",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-o": "file_finder::Toggle",
+    },
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "alt-,": "editor::GoToPreviousHunk"
+    }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "alt-,": "editor::GoToPreviousHunk"
+    }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "alt-,": "editor::GoToPreviousHunk"
     }
   },
   {
     "context": "Workspace",
     "unbind": {
-      "ctrl-shift-p": "command_palette::Toggle"
+      "ctrl-b": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "unbind": {
+      "ctrl-o": "workspace::OpenFiles"
+    }
+  },
+  {
+    "context": "GitPanel",
+    "bindings": {
+      "ctrl-d": "git::Diff"
+    }
+  },
+  {
+    "context": "GitPanel",
+    "unbind": {
+      "ctrl-g d": "git::Diff"
     }
   },
   {
     "bindings": {
-      "alt-o": "file_finder::Toggle"
+      "alt-1": "project_panel::Toggle"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-alt-shift-c": "editor::CopyRelativePath"
     }
   }
 ]

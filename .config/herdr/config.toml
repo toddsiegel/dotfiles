@@ -1,3 +1,4 @@
+onboarding = false
 # herdr configuration
 # Place this file at ~/.config/herdr/config.toml
 
@@ -28,6 +29,8 @@
 # red = "#ff6188"
 # green = "#a6e3a1"
 
+name = "one-dark"
+auto_switch = false
 [terminal]
 # Executable used for new interactive panes.
 # Empty means $SHELL, then /bin/sh.
@@ -56,6 +59,10 @@
 
 [keys]
 prefix = "alt+space"
+
+# Panes
+cycle_pane_next = "prefix+]"
+cycle_pane_previous = "prefix+["
 split_vertical = "prefix+|"
 split_horizontal = "prefix+minus"
 
@@ -94,8 +101,6 @@ split_horizontal = "prefix+minus"
 # focus_pane_down = "prefix+j"
 # focus_pane_up = "prefix+k"
 # focus_pane_right = "prefix+l"
-# cycle_pane_next = "prefix+tab"
-# cycle_pane_previous = "prefix+shift+tab"
 # last_pane = ""          # optional, unset by default; bind e.g. "prefix+tab" for global back-and-forth
 # close_pane = "prefix+x"
 # zoom = "prefix+z"       # legacy alias: fullscreen
@@ -273,6 +278,9 @@ split_horizontal = "prefix+minus"
 # accent = "cyan"
 
 # Background notification popup delivery
+status_indicators = "symbols"
+show_agent_labels_on_pane_borders = true
+agent_panel_sort = "spaces"
 [ui.toast]
 # off = disable pop-up notifications
 # herdr = show in-app toasts
@@ -281,6 +289,7 @@ split_horizontal = "prefix+minus"
 # delivery = "off"
 # delay_seconds = 1
 
+delivery = "system"
 [ui.toast.herdr]
 # position = "bottom-right"
 

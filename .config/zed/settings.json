@@ -7,14 +7,15 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "cli_default_open_behavior": "existing_window",
   "debugger": {
-    "button": false
+    "button": false,
   },
   "format_on_save": "on",
   "edit_predictions": {
     "provider": "zed",
   },
-  "diff_view_style": "split",
+  "diff_view_style": "unified",
   "icon_theme": {
     "mode": "dark",
     "light": "Zed (Default)",
@@ -31,6 +32,9 @@
     "dock": "right",
   },
   "agent": {
+    "threads_sidebar": {
+      "position": "right"
+    },
     "auto_compact": {
       "threshold": "90%",
     },
@@ -66,33 +70,32 @@
     "dark": "One Dark",
   },
   "languages": {
+    "Markdown": {
+      "soft_wrap": "bounded",
+      "remove_trailing_whitespace_on_save": true
+    },
+    "HTML": {
+      "tab_size": 2,
+    },
     "CSS": {
-      "format_on_save": "on",
-      "formatter": {
-        "external": {
-          "command": "npx",
-          "arguments": [
-            "stylelint",
-            "--fix",
-            "--stdin",
-            "--stdin-filename",
-            "{buffer_path}",
-          ],
-        },
+      "code_actions_on_format": {
+        "source.fixAll.stylelint": true
       },
+      "format_on_save": "on",
+      "formatter": [],
     },
     "HTML+ERB": {
+      "inlay_hints": {
+        "enabled": true,
+      },
       "tab_size": 2,
       "language_servers": ["herb", "ruby-lsp"],
       "formatter": {
-        "external": {
-          "command": "npm",
-          "arguments": ["run", "--silent", "herb:format"],
-        },
+        "external": { "command": "herb-format", "arguments": ["-"] },
       },
     },
     "Ruby": {
-      "language_servers": ["ruby-lsp"],
+      "language_servers": ["ruby-lsp", "rubocop"],
     },
   },
   "lsp": {

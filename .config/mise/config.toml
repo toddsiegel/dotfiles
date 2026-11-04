@@ -1,21 +1,39 @@
+[bootstrap.mise_shell_activate]
+bash = true
+
+[bootstrap.apt.sources]
+xtradeb = { ppa = "xtradeb/apps" }
+
+[bootstrap.packages]
+"apt:chromium" = "latest"
+
 [tools]
-btop = "latest"
-fd = "latest"
-gh = "latest"
-git-lfs = "latest"
-gum = "latest"
-herdr = "latest"
-lazydocker = "latest"
-lazygit = "latest"
-neovim = "latest"
+btop = { version = "latest", auto_update = true }
+fd = { version = "latest", auto_update = true }
+gh = { version = "latest", auto_update = true }
+git-lfs = { version = "latest", auto_update = true }
+gum = { version = "latest", auto_update = true} 
+herdr = { version = "latest", auto_update = true }
+lazydocker = { version = "latest", auto_update = true }
+lazygit = { version = "latest", auto_update = true }
+neovim = { version = "latest", auto_update = true }
 node = 'lts'
-ripgrep = "latest"
-ruby = "latest"
-rust = "latest"
-tmux = "latest"
-usage = "latest"
+pipx = { version = "latest", auto_update = true }
+python = "3.14"
+ripgrep = { version = "latest", auto_update = true }
+ruby = { version = "latest", auto_update = true }
+rust = { version = "latest", auto_update = true }
+usage = { version = "latest", auto_update = true }
+uv = "latest"
+
+[tasks.serve]
+run = "ruby -run -e httpd $(pwd) -p 8000"
+
 
 [settings]
 
 [settings.ruby]
 compile = false
+
+[settings.self_update]
+auto = true

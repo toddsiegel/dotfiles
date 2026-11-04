@@ -92,6 +92,9 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+# herdr
+alias herdr-reload='herdr server reload-config'
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -124,5 +127,6 @@ export PATH="$PATH:/home/todd/.local/bin"
 # opencode
 export PATH=/home/todd/.opencode/bin:$PATH
 
-# Keep last: mise must activate after all other PATH modifications
-command -v mise >/dev/null && eval "$(mise activate bash)"
+# >>> mise:activate >>> managed by mise — do not edit between markers
+eval "$(mise activate bash)"
+# <<< mise:activate <<<
